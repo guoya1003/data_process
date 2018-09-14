@@ -2,6 +2,8 @@
 
 
 详解见我csdn博客
+1、图片的裁剪和合并 https://blog.csdn.net/weixin_38517705/article/details/82703252
+2、
 ### clip_merge_picture
 1、当要使用裁剪图片的功能时，取消掉clip_one_picture函数前的注释即可
 ```
