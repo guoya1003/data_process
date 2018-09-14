@@ -5,7 +5,7 @@ import os
 """
 输入：图片路径(path+filename)，裁剪获得小图片的列数、行数（也即宽、高）
 """
-def crop_one_picture(path,filename,cols,rows):
+def clip_one_picture(path,filename,cols,rows):
     img=cv2.imread(path+filename,-1)##读取彩色图像，图像的透明度(alpha通道)被忽略，默认参数;灰度图像;读取原始图像，包括alpha通道;可以用1，0，-1来表示
     sum_rows=img.shape[0]   #高度
     sum_cols=img.shape[1]    #宽度
@@ -27,7 +27,7 @@ path='.\\input\\origin\\test\\'   #要裁剪的图片所在的文件夹
 filename='2015_rgbn.tif'    #要裁剪的图片名
 cols=1024        #小图片的宽度（列数）
 rows=1024        #小图片的高度（行数）
-#crop_one_picture(path,filename,1024,1024)
+#clip_one_picture(path,filename,1024,1024)
 
 
 
